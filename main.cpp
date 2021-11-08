@@ -65,7 +65,7 @@ void customGradient(const Mat& image, Mat& result) {
 }
 
 int main() {
-    cv::Mat image= cv::imread("/home/nadezhda/Документы/Raspozn/lab2/ll.jpg");
+    cv::Mat image= cv::imread("ll.jpg");
     cv::Mat res;
     if (image.empty()) {
         std::cout << "Error\n";
