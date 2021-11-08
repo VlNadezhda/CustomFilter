@@ -67,7 +67,7 @@ void Gradient(const Mat &image, Mat &result) {
 }
 
 int main() {
-    cv::Mat image = cv::imread("/home/nadezhda/Документы/Raspozn/lab2/eagle_owl.jpg");
+    cv::Mat image = cv::imread("eagle_owl.jpg");
     cv::Mat res;
     if (image.empty()) {
         std::cout << "Error\n";
