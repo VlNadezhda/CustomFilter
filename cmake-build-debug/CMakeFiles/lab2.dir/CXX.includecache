@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nadezhda/Документы/Raspozn/lab2/main.cpp
+iostream
+-
+opencv2/opencv.hpp
+-
+vector
+-
+opencv2/imgproc.hpp
+-
+

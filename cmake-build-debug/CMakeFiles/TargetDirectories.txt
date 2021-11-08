@@ -1,0 +1,3 @@
+/home/nadezhda/Документы/Raspozn/lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nadezhda/Документы/Raspozn/lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nadezhda/Документы/Raspozn/lab2/cmake-build-debug/CMakeFiles/opencv.dir

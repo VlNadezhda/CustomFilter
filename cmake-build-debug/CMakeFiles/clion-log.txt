@@ -1,0 +1,4 @@
+/home/nadezhda/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/nadezhda/Документы/Raspozn/lab2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nadezhda/Документы/Raspozn/lab2/cmake-build-debug
