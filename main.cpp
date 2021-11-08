@@ -50,33 +50,35 @@ uchar Convolution(const Mat& image, Mat& result,
 
 }
 
-void customSmoothing(const Mat& image, Mat& result, unsigned size) {
+void Smoothing(const Mat &image, Mat &result, unsigned size) {
     image.copyTo(result);
 
     //усредняющий фильтр
-    vector<vector<double> > kernel(size,vector<double>(size, 1. / (size * size)));
+    vector<vector<double> > kernel(size, vector<double>(size, 1. / (size * size)));
     Convolution(image, result, kernel);
 }
 
-void customGradient(const Mat& image, Mat& result) {
+void Gradient(const Mat &image, Mat &result) {
     image.copyTo(result);
-    vector<vector<double> > kernel = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+    vector<vector<double> > kernel = {{-1, 0, 1},
+                                      {-2, 0, 2},
+                                      {-1, 0, 1}};
     Convolution(image, result, kernel);
 }
 
 int main() {
-    cv::Mat image= cv::imread("ll.jpg");
+    cv::Mat image = cv::imread("/home/nadezhda/Документы/Raspozn/lab2/eagle_owl.jpg");
     cv::Mat res;
     if (image.empty()) {
         std::cout << "Error\n";
         return -1;
     }
 
-    customSmoothing(image, res, 6);
+    Smoothing(image, res, 6);
     namedWindow("Smoothing", WINDOW_AUTOSIZE);
     imshow("Smoothing", res);
 
-    customGradient(image, res);
+    Gradient(image, res);
     namedWindow("Gradient", WINDOW_AUTOSIZE);
     imshow("Gradient", res);
 
